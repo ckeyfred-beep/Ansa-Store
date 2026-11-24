@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto | Ansa Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dark-body">
+
+    <header class="main-header">
+        <div class="header-left">
+            <a href="categoria.html" class="icon-btn"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="header-icons">
+            <button id="cart-btn" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button id="menu-btn" class="icon-btn menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div id="overlay" class="overlay"></div>
+    
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menú</h2>
+            <button id="close-menu" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="sidebar-links" style="margin-top:20px;">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="categoria.html"><i class="fa-solid fa-box"></i> Catálogo</a></li>
+        </ul>
+    </aside>
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fa-solid fa-bag-shopping"></i> Tu bolsa</h2>
+            <button id="close-cart" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-empty">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Tu bolsa está vacía</p>
+        </div>
+    </aside>
+
+    <main class="main-content product-page-content">
+        
+        <div class="product-detail-image">
+            <img id="prod-imagen" src="" alt="Producto">
+        </div>
+
+        <div class="product-detail-info">
+            <span class="brand">ANSA STORE</span>
+            <h1 id="prod-nombre" class="product-detail-name">Cargando...</h1>
+            
+            <div class="price-detail">
+                <div class="price-row">
+                    <span id="prod-precio" class="price-bs-large">...</span>
+                </div>
+                <span class="discount-badge">DISPONIBLE</span>
+            </div>
+
+            <div class="product-description">
+                <h3>Descripción</h3>
+                <p id="prod-descripcion">Cargando información...</p>
+            </div>
+
+            <div class="action-buttons">
+                <div class="quantity-selector">
+                    <button id="btn-restar">-</button>
+                    <input type="number" id="cantidad" value="1" min="1" readonly>
+                    <button id="btn-sumar">+</button>
+                </div>
+                <button id="btn-comprar-wa" class="btn-add-to-cart">
+                    <i class="fa-brands fa-whatsapp"></i> Comprar
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

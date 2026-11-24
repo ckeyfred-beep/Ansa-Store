@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Ansa Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dark-body">
+
+    <header class="main-header">
+        <div class="header-left">
+            <a href="index.html" class="icon-btn"><i class="fa-solid fa-arrow-left"></i></a>
+            <h2 id="titulo-categoria" class="header-title">Catálogo</h2>
+        </div>
+        <div class="header-icons">
+            <button id="cart-btn" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button id="menu-btn" class="icon-btn menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div id="overlay" class="overlay"></div>
+    
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menú</h2>
+            <button id="close-menu" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="sidebar-links" style="margin-top:20px;">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="categoria.html"><i class="fa-solid fa-box"></i> Todo el Catálogo</a></li>
+            <li><a href="categoria.html?cat=caballero"><i class="fa-solid fa-user-tie"></i> Caballero</a></li>
+            <li><a href="categoria.html?cat=damas"><i class="fa-solid fa-person-dress"></i> Damas</a></li>
+            <li><a href="categoria.html?cat=niños"><i class="fa-solid fa-child"></i> Niños</a></li>
+        </ul>
+    </aside>
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fa-solid fa-bag-shopping"></i> Tu bolsa</h2>
+            <button id="close-cart" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-empty">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Tu bolsa está vacía</p>
+        </div>
+    </aside>
+
+    <main class="catalog-list">
+        
+        <div id="dynamic-catalog" class="category-group">
+            <!-- Productos inyectados por JS -->
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; padding-bottom: 30px;">
+            <p style="color: #888; margin-bottom: 15px;">¿No encuentras lo que buscas?</p>
+            <a href="https://wa.me/584244386212?text=Hola,%20busco%20una%20prenda%20en%20espec%C3%ADfico" target="_blank" class="btn-whatsapp-floating" style="display:inline-flex; position:static; width:auto; padding: 12px 30px; border-radius:30px; box-shadow:none; font-size:15px; background:#25D366; color:white; text-decoration:none; font-weight:600;">
+                Preguntar por WhatsApp <i class="fa-brands fa-whatsapp" style="margin-left:8px;"></i>
+            </a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

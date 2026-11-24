@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansa Store | Boutique</title>
+    <!-- Fuentes elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- TOAST -->
+    <div id="toast" class="toast">Enlace copiado con éxito</div>
+
+    <header class="main-header">
+        <a href="index.html" class="logo" style="text-decoration:none;">
+            <div class="logo-icon">
+                <i class="fa-solid fa-hanger"></i>
+                <span class="logo-text">Ansa</span>
+                <span class="logo-subtext">Store</span>
+            </div>
+        </a>
+        <div class="header-icons">
+            <button id="cart-btn" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button id="menu-btn" class="icon-btn menu-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div id="overlay" class="overlay"></div>
+
+    <!-- MENU LATERAL -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Menú</h2>
+            <button id="close-menu" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="search-box" id="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-input" placeholder="Buscar prendas...">
+        </div>
+
+        <ul class="sidebar-links">
+            <li><a href="categoria.html"><i class="fa-solid fa-box"></i> Todo el Catálogo</a></li>
+            <li><a href="categoria.html?cat=caballero"><i class="fa-solid fa-user-tie"></i> Caballero</a></li>
+            <li><a href="categoria.html?cat=damas"><i class="fa-solid fa-person-dress"></i> Damas</a></li>
+            <li><a href="categoria.html?cat=niños"><i class="fa-solid fa-child"></i> Niños</a></li>
+            <li><a href="categoria.html?cat=personalizaciones"><i class="fa-solid fa-paintbrush"></i> Personalizaciones</a></li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <a href="https://wa.me/584244386212" target="_blank" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp</a>
+        </div>
+    </aside>
+
+    <!-- CARRITO LATERAL -->
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fa-solid fa-bag-shopping"></i> Tu bolsa</h2>
+            <button id="close-cart" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-empty">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Tu bolsa está vacía</p>
+            <a href="categoria.html" class="link-gold">Ver productos</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <!-- HERO PROFILE -->
+        <section class="profile-hero">
+            <div class="cover-photo">
+                <img src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ansa Store">
+            </div>
+            <div class="profile-info">
+                <div class="profile-logo">
+                    <i class="fa-solid fa-hanger"></i>
+                    <span class="logo-text-large">Ansa</span>
+                    <span class="logo-subtext-large">Store</span>
+                </div>
+                
+                <div class="name-status-wrapper">
+                    <h1 class="store-name">Ansa Store</h1>
+                    <div class="status-badge"><span class="dot"></span> 24 Horas</div>
+                </div>
+                
+                <p class="store-desc">Ropa de caballero, damas y niños.<br>Personalizaciones exclusivas.</p>
+                
+                <div class="action-row">
+                    <a href="https://wa.me/584244386212" target="_blank" class="action-btn">
+                        <div class="icon-circle"><i class="fa-brands fa-whatsapp"></i></div>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="categoria.html" class="action-btn">
+                        <div class="icon-circle"><i class="fa-solid fa-store"></i></div>
+                        <span>Catálogo</span>
+                    </a>
+                    <button id="action-share" class="action-btn">
+                        <div class="icon-circle"><i class="fa-solid fa-share-nodes"></i></div>
+                        <span>Compartir</span>
+                    </button>
+                    <button id="action-search" class="action-btn">
+                        <div class="icon-circle"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <span>Buscar</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- REDES -->
+        <section class="contact-grid-section">
+            <a href="https://instagram.com/ansa_storevzla" target="_blank" class="contact-box">
+                <i class="fa-brands fa-instagram" style="color: #E1306C;"></i>
+                <span>@ansa_storevzla</span>
+            </a>
+            <a href="https://facebook.com/" target="_blank" class="contact-box">
+                <i class="fa-brands fa-facebook" style="color: #1877F2;"></i>
+                <span>Ansa storevzla</span>
+            </a>
+            <a href="tel:+584244386212" class="contact-box">
+                <i class="fa-solid fa-phone" style="color: #D4AF37;"></i>
+                <span>+58 424-4386212</span>
+            </a>
+        </section>
+
+        <!-- BENEFICIOS (NUEVO) -->
+        <section class="section-container benefits-section">
+            <div class="benefit-item">
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Envíos Nacionales</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fa-solid fa-gem"></i>
+                <span>Calidad Premium</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fa-solid fa-headset"></i>
+                <span>Atención 24/7</span>
+            </div>
+        </section>
+
+        <!-- BANNER COLECCIÓN -->
+        <section class="promo-banner">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h3>Colección Old Money</h3>
+                    <p>Elegancia y estilo clásico para el día a día.</p>
+                    <a href="categoria.html?cat=caballero" class="btn-mini">Ver Colección</a>
+                </div>
+                <i class="fa-solid fa-chess-knight promo-icon"></i>
+            </div>
+        </section>
+
+        <!-- CATEGORÍAS -->
+        <section class="section-container">
+            <h2 class="section-title">Explorar</h2>
+            <div class="grid-3-col">
+                <a href="categoria.html?cat=caballero" class="category-card">
+                    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Caballero">
+                    <p>CABALLERO</p>
+                </a>
+                <a href="categoria.html?cat=damas" class="category-card">
+                    <img src="https://images.pexels.com/photos/972995/pexels-photo-972995.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Damas">
+                    <p>DAMAS</p>
+                </a>
+                <a href="categoria.html?cat=niños" class="category-card">
+                    <img src="https://images.pexels.com/photos/1619690/pexels-photo-1619690.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Niños">
+                    <p>NIÑOS</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS DESTACADOS -->
+        <section class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Novedades</h2>
+                <a href="categoria.html" class="view-all">VER TODO <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="grid-2-col">
+                <div class="product-card">
+                    <a href="producto.html?id=chemise-oldmoney">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/769749/pexels-photo-769749.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Chemise">
+                            <span class="sku-tag">Old Money</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="brand">ANSA</span>
+                            <h3 class="product-name">Chemises Oldmoney Caballero</h3>
+                            <div class="price"><span class="price-bs">VES 30.00</span></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="producto.html?id=pantalon-slim">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Pantalón">
+                            <span class="sku-tag">Slim Fit</span>
+                        </div>
+                        <div class="product-info">
+                            <span class="brand">ANSA</span>
+                            <h3 class="product-name">Pantalones tipo Slim para Caballero</h3>
+                            <div class="price"><span class="price-bs">VES 30.00</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOOKBOOK / ESTILO (NUEVO) -->
+        <section class="section-container info-bg">
+            <h2 class="section-title text-center">Lookbook Ansa</h2>
+            <div class="lookbook-grid">
+                <div class="lookbook-item">
+                    <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Estilo 1">
+                    <div class="lookbook-text">
+                        <h4>Estilo Urbano</h4>
+                        <p>Comodidad y tendencia</p>
+                    </div>
+                </div>
+                <div class="lookbook-item">
+                    <img src="https://images.pexels.com/photos/972995/pexels-photo-972995.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Estilo 2">
+                    <div class="lookbook-text">
+                        <h4>Elegancia Casual</h4>
+                        <p>Para el día a día</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONALIZACIONES -->
+        <section class="section-container">
+            <div class="customization-box">
+                <i class="fa-solid fa-paintbrush"></i>
+                <div>
+                    <h3>¿Hacemos personalizaciones?</h3>
+                    <p>Sí, adaptamos tus prendas a tu medida y estilo. Contáctanos para más información.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEÑAS (NUEVO) -->
+        <section class="section-container info-bg">
+            <h2 class="section-title">Opiniones de Clientes</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="avatar">R</div>
+                        <div>
+                            <h4>Ricardo M.</h4>
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p>"La calidad de la tela es increíble. Me llegó el pedido a Caracas en 2 días. 100% recomendados."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="avatar" style="background: #D4AF37; color: #000;">V</div>
+                        <div>
+                            <h4>Valeria G.</h4>
+                            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p>"Compré un conjunto para mi hijo y quedó perfecto. La atención por WhatsApp fue muy rápida."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN ÚTIL -->
+        <section class="section-container">
+            <h2 class="section-title">Información</h2>
+            
+            <div class="accordion">
+                <button class="accordion-btn">
+                    <span><i class="fa-solid fa-truck-fast"></i> Métodos de Envío</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Realizamos entregas personales y envíos nacionales a través de las principales empresas de encomiendas (MRW, Zoom). Coordinamos todo por WhatsApp.</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <button class="accordion-btn">
+                    <span><i class="fa-solid fa-shirt"></i> Cuidado de las Prendas</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Para mantener la calidad de tus chemises y pantalones Old Money, recomendamos lavar a mano o en ciclo delicado, y secar a la sombra.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="logo-footer">
+            <i class="fa-solid fa-hanger"></i> Ansa Store
+        </div>
+        <p class="footer-desc">Elegancia y calidad en cada prenda.</p>
+        <div class="footer-bottom">
+            <p>© 2026 Ansa Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
